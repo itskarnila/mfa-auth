@@ -56,10 +56,12 @@ npm install
 1. Buat akun di [auth0.com](https://auth0.com)
 2. Login ke [Auth0 Dashboard](https://manage.auth0.com/)
 3. Buat aplikasi baru:
+
    - Pilih **"Single Page Web Applications"**
    - Copy **Domain** dan **Client ID**
 
 4. Konfigurasi URL di Auth0 Dashboard → Settings:
+
    - **Allowed Callback URLs:** `http://localhost:5173`
    - **Allowed Logout URLs:** `http://localhost:5173`
    - **Allowed Web Origins:** `http://localhost:5173`
