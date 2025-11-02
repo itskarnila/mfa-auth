@@ -21,9 +21,11 @@ if (rootElement) {
         clientId={clientId || ""}
         authorizationParams={{
           redirect_uri: window.location.origin,
+          audience: audience,
         }}
         cacheLocation="localstorage"
         useRefreshTokens={true}
+        useRefreshTokensFallback={true}
       >
         <App />
       </Auth0Provider>
